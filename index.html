@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Application Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <h1>Application Form</h1>
+
+  <form action="index2.html" method="get">
+    <fieldset>
+      
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="e.g. you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password" placeholder="Choose a secure password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" name="age" min="10" max="100" placeholder="Enter your age" required>
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" style="display:inline;">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" style="display:inline;">Female</label>
+      </div>
+
+      <div class="form-group">
+        <label for="language">Programming Language You Know:</label>
+        <select name="language" id="language">
+          <option value="c">C</option>
+          <option value="cpp">C++</option>
+          <option value="java">Java</option>
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Subjects of Interest:</label>
+        <input type="checkbox" id="maths" name="subject" value="maths">
+        <label for="maths" style="display:inline;">Maths</label><br>
+        <input type="checkbox" id="science" name="subject" value="science">
+        <label for="science" style="display:inline;">Science</label>
+      </div>
+
+      <div class="form-group">
+        <label for="fileupload">Upload Your Resume or Document:</label>
+        <input type="file" id="fileupload" name="fileupload" accept=".pdf,.doc,.docx">
+      </div>
+
+      <div class="form-group">
+        <p>Click the button below to submit your application:</p>
+        <button type="submit">Submit Application</button>
+      </div>
+
+    </fieldset>
+  </form>
+
+</body>
+</html>
